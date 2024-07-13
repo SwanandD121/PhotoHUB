@@ -29,7 +29,11 @@ import { SubmitButton } from "../components/SubmitButton";
     const user = await getUser();
   
     if (!user) {
-      throw new Error("Unauthorized");
+      return (
+        <div className="text-3xl font-bold">
+          Not Authorised
+        </div>
+      )
     }
   
     const data = await getData(user.id);
