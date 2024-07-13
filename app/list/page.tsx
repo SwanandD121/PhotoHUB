@@ -3,6 +3,7 @@ import { ListForm } from '../components/form/ListForm'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import { redirect } from 'next/navigation';
 import prisma from '../lib/db';
+import { unstable_noStore as noStore } from "next/cache";
 
 // ---------if the user has not linked the account with stripe, he will be redirected to billing page where he has to link with stripe first, else he cannot list the service
 // but for some reason, when the user links his account with stripe, the stripeConnedtedLinked is not getting updated from false to true in the prisma database
@@ -27,6 +28,7 @@ import prisma from '../lib/db';
 // -------------------------------------------------------------------
   
 export default async function SellRoute() {
+    noStore();
     const { getUser } = getKindeServerSession();
     const user = await getUser();
 

@@ -6,6 +6,7 @@ import Image from "next/image";
 import { JSONContent } from "@tiptap/react";
 import { BuyService } from "@/app/actions";
 import { BuyButton } from "@/app/components/SubmitButton";
+import { unstable_noStore as noStore } from "next/cache";
 
 
 
@@ -35,6 +36,7 @@ async function getData(id: string) {
 }
 
 export default async function ServicePage({params}: {params: {id: string}}){
+    noStore();
 
     const data = await getData(params.id);
 
