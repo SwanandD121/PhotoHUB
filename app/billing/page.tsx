@@ -45,7 +45,7 @@ import { SubmitButton } from "../components/SubmitButton";
           <CardContent className="grid grid-cols-2 gap-x-4">
             <div className="flex flex-col gap-4 col-span-1 rounded-lg p-4 bg-muted">
               <h3 className="text-muted-foreground">
-                If you haven't linked your account to <span className="font-bold text-xl bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">Stripe</span> &#40;our official secured payments partner&#41;, then please link it by clicking on the button below.
+                If you haven&apos;t linked your account to <span className="font-bold text-xl bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">Stripe</span> &#40;our official secured payments partner&#41;, then please link it by clicking on the button below.
               </h3>
               <form action={CreateStripeAccountLink}> 
                 <SubmitButton title="Link your Account to Stripe" />

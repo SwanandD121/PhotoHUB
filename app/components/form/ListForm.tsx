@@ -52,7 +52,7 @@ export function ListForm() {
           <AlertTitle>Instruction</AlertTitle>
           <AlertDescription>
             <h3 className="">
-              You first need to link your account with <span className="font-bold text-xl bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">Stripe</span> &#40;our official secured payments partner&#41;. If you haven't linked it yet, then please visit billing page by clicking <span className="text-blue-500 hover:underline hover:cursor-pointer"><Link href={"/billing"}>here</Link></span>.
+              You first need to link your account with <span className="font-bold text-xl bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">Stripe</span> &#40;our official secured payments partner&#41;. If you haven&apos;t linked it yet, then please visit billing page by clicking <span className="text-blue-500 hover:underline hover:cursor-pointer"><Link href={"/billing"}>here</Link></span>.
             </h3>
             <h3>
               If you have already linked your account, please procced to list your service.
